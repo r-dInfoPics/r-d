@@ -56,7 +56,7 @@ body {
     font-family: Trebuchet, arial, verdana, sans-serif;
     line-height: 1.2;
     font-size: 100%;
-    background: #e7e6ed; 
+    background: #f1f0f5; 
 }
 
 i, em {
@@ -90,7 +90,7 @@ h3 {
 
 h4 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 120%;
 }
 
 main, body > footer {
@@ -105,10 +105,6 @@ main, body > footer {
 
 main{
     min-height: calc(100vh - 42px - 200px - 50px - 30px - 20px - 10px);
-}
-
-main#article{
-    min-height: calc(100vh - 42px - 200px - 20px - 30px - 20px - 10px);
 }
 
 
@@ -131,14 +127,6 @@ blockquote::after {
     font-size: 18px;
 }
 
-/** Style des figures (avec iframe) */
-figure {
-    display: inline-block;
-    margin: 10px 16px;
-    text-align: center;
-}
-
-
 /************************************************************************
                         Menu de navigation
 *************************************************************************/
@@ -153,7 +141,7 @@ nav {
 }
 
 nav > ul {
-    background: #e7e6ed;
+    background: #f1f0f5;
     text-align: right;
 }
 
@@ -269,6 +257,7 @@ header a{
     border: solid #eb6724;
     margin-left: 40px;
     font-weight: bold;
+    
 }
 
 header a:hover{
@@ -289,7 +278,7 @@ header h1 {
 body > footer {
     text-align: center;
     background-color: #0e0e0e;
-    color: #c1c0ca;;
+    color: #f1f0f5;
 }
 
 
@@ -304,14 +293,9 @@ footer> div > div{
 }
 
 footer a{
-    text-decoration: underline;
-    color: #c1c0ca;
+    color: #f1f0f5;
 }
 
-footer a:hover{
-    transition: color 0.4s linear 0s;
-    color: #5143cb;
-}
 
 
 /****************************************************************** 
@@ -321,8 +305,13 @@ footer a:hover{
 section{
     padding: 80px;
 }
-section:nth-child(1) > p{
-    text-align: center; 
+
+section:nth-child(1){
+    padding-bottom: 20px;
+}
+
+section:nth-child(1) h2{
+    color: #173461;
 }
 
 section:nth-child(3){
@@ -337,13 +326,13 @@ section:nth-child(3){
 section:nth-child(4){
     border-image: fill 0 linear-gradient(350deg, transparent, #1059cf 50%);
     background: url(../images/fondBleu.png) center/cover;
-    color:rgb(6, 0, 73);
+    color:rgb(220, 218, 232);
     padding-right: 40%;
 }
 
 
 .bandeauEvent li {
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(255 186 121);
     width: 400px;
     height: 150px;
     float: none;
@@ -351,12 +340,27 @@ section:nth-child(4){
     border-radius: 10px;
     margin-right: 70px;
     padding: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+
+    
 }
 
 .bandeauEvent li img{
     position: absolute;
     display: flex;
     margin-left: 300px;
+}
+
+.bandeauEvent p{
+    width: 250px;
+    float: left;
+    text-align: left;
+}
+h5{
+    width: 250px;
+    font-size: small;
+    float: left;
+    text-align: left;
 }
 
 .googleMap {
