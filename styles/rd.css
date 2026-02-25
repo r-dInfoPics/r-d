@@ -429,6 +429,7 @@ h5{
 .googleMap {
     border-radius: 20px;
     width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -542,6 +543,7 @@ body {
 }
 
 .even h2 {
+    margin-top: 40px;
     color: #173461;
 }
 
@@ -549,4 +551,16 @@ body {
 .even li {
     color: #173461;
     margin: 50px 0 50px 0;
+}
+
+.boutique section {
+    background: rgba(93, 129, 153, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 40px 0 40px;
+}
+
+.boutique section:nth-child(1) {
+    margin-top: 100px;
 }
