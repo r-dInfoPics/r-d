@@ -279,28 +279,7 @@ header h1 {
 }
 
 
-@media (max-width: 768px) {
 
-    .imgTitre {
-        position: absolute;
-        top: 5%;   
-        margin-right: auto;
-        width: 85%;
-    }
-
-    header h1 {
-        visibility: hidden;
-    }
-
-    header a {
-        display: block;
-        width: fit-content;
-        font-size: 14px;
-        padding: 8px;
-        visibility: visible;
-        margin: auto;
-    }
-}
 
 /****************************************************************
                             Pied de page
@@ -318,7 +297,6 @@ footer .contenu-footer {
 }
 
 footer> div > div{
-    padding: 10px;
     width: 33%;
 }
 
@@ -380,17 +358,6 @@ section:nth-child(4){
     height: auto;
 }
 
-@media (max-width: 900px){
-    .index section:nth-child(2) ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px){
-    .index section:nth-child(2) ul {
-        grid-template-columns: 1fr;
-    }
-}
 
 .index section:nth-child(2) img{
     width: 100%;
@@ -432,12 +399,6 @@ h5{
     font-size: small;
 }
 
-.googleMap {
-    border-radius: 20px;
-    width: 100%;
-    margin-top: 30px;
-}
-
 
 
 header img {
@@ -450,6 +411,47 @@ header h1 {
     right: 5%;
     bottom: clamp(15px, 4vw, 40px);
     font-size: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+@media (max-width: 768px) {
+
+    .imgTitre {
+        position: absolute;
+        top: 10%;   
+        margin-right: auto;
+        width: 85%;
+    }
+
+    header h1 {
+        visibility: hidden;
+    }
+
+    header a {
+        display: block;
+        width: fit-content;
+        font-size: 14px;
+        padding: 8px;
+        visibility: visible;
+        margin: auto;
+    }
+}
+
+@media (max-width: 900px){
+    .index section:nth-child(2) ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .index section:nth-child(2) ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -492,11 +494,16 @@ header h1 {
         padding: 40px 20px;
     }
 
-    section:nth-child(3),
-    section:nth-child(4) {
+    section:nth-child(4){
         padding-left: 20px;
         padding-right: 20px;
         text-align: left;
+    }
+
+    section:nth-child(3) {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: right;
     }
 }
 
@@ -506,18 +513,31 @@ header h1 {
     footer .contenu-footer {
         flex-direction: column;
         padding: 30px 20px;
-        text-align: left;
     }
 
     footer .contenu-footer > div {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    footer p {
+        text-align: center;
+    }
 }
 
-body {
-    overflow-x: hidden;
+/****************************************************************** 
+                        lieu
+*******************************************************************/
+
+.googleMap {
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 30px;
 }
+
+/****************************************************************** 
+                        evenements
+*******************************************************************/
 
 
 .even ul {
@@ -540,6 +560,10 @@ body {
 }
 
 
+
+/****************************************************************** 
+                        boutique
+*******************************************************************/
 
 
 
